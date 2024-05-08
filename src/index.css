@@ -1,13 +1,80 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: PolitieSans;
+  src: url("./assets/fonts/politiesans-regular-v13-web.eot");
+  src: url("./assets/fonts/politiesans-regular-v13-web.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/politiesans-regular-v13-web.woff2") format("woff2"),
+    url("./assets/fonts/politiesans-regular-v13-web.woff") format("woff"),
+    url("./assets/fonts/politiesans-regular-v13-web.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PolitieSans;
+  src: url("./assets/fonts/politiesans-bold-v13-web.eot");
+  src: url("./assets/fonts/politiesans-bold-v13-web.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/politiesans-bold-v13-web.woff2") format("woff2"),
+    url("./assets/fonts/politiesans-bold-v13-web.woff") format("woff"),
+    url("./assets/fonts/politiesans-bold-v13-web.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: PolitieSans;
+  src: url("./assets/fonts/politiesans-italic-v13-web.eot");
+  src: url("./assets/fonts/politiesans-italic-v13-web.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/politiesans-italic-v13-web.woff2") format("woff2"),
+    url("./assets/fonts/politiesans-italic-v13-web.woff") format("woff"),
+    url("./assets/fonts/politiesans-italic-v13-web.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: PolitieSans;
+  src: url("./assets/fonts/politiesans-bolditalic-v13-web.eot");
+  src: url("./assets/fonts/politiesans-bolditalic-v13-web.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/politiesans-bolditalic-v13-web.woff2") format("woff2"),
+    url("./assets/fonts/politiesans-bolditalic-v13-web.woff") format("woff"),
+    url("./assets/fonts/politiesans-bolditalic-v13-web.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: PolitieSans;
+  src: url("./assets/fonts/politiesans-black-v13-web.eot");
+  src: url("./assets/fonts/politiesans-black-v13-web.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/politiesans-black-v13-web.woff2") format("woff2"),
+    url("./assets/fonts/politiesans-black-v13-web.woff") format("woff"),
+    url("./assets/fonts/politiesans-black-v13-web.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: PolitieSans;
+  src: url("./assets/fonts/politiesans-blackitalic-v13-web.eot");
+  src: url("./assets/fonts/politiesans-blackitalic-v13-web.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/politiesans-blackitalic-v13-web.woff2") format("woff2"),
+    url("./assets/fonts/politiesans-blackitalic-v13-web.woff") format("woff"),
+    url("./assets/fonts/politiesans-blackitalic-v13-web.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }
