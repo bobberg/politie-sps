@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useMemo } from "react";
-import { PublicClientApplication } from "@azure/msal-browser";
-import { Client } from "@microsoft/microsoft-graph-client";
+import React from "react";
+// import React, { useState, useEffect, useMemo } from "react";
+// import { PublicClientApplication } from "@azure/msal-browser";
+// import { Client } from "@microsoft/microsoft-graph-client";
 import "./App.css";
 import PolitieLogo from "./assets/PolitieLogo";
 // Import your icons here
