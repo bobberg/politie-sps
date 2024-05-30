@@ -123,7 +123,7 @@ const App = () => {
           <a href="https://politie-sps.azurewebsites.net/visit">
             <div className="button">
               <VideoCamera />
-              <span>Start Teams Video Call</span>
+              <span>Ik wil direct contact met de politie</span>
             </div>
           </a>
           {/* {callAdapter ? (
