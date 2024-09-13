@@ -7,7 +7,7 @@ import PolitieLogo from "./assets/PolitieLogo";
 // Import your icons here
 import Info from "./assets/Info";
 import Notebook from "./assets/Notebook";
-import VideoCamera from "./assets/VideoCamera";
+// import VideoCamera from "./assets/VideoCamera";
 import Zien from "./assets/Zien";
 import { EmergencyPhone } from "./assets/EmergencyPhone";
 
