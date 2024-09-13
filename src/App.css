@@ -57,7 +57,7 @@ h2 {
   gap: 20px;
   width: calc(100% - 10px - 1px);
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 1080px;
 }
 
 .button {
