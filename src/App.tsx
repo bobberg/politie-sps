@@ -122,12 +122,12 @@ const App = () => {
 
           {/* <a href="https://politie-sps.azurewebsites.net/visit"> */}
           {/* <a href="https://visit.teams.microsoft.com/webrtc-web/?tenantId=939e76d1-059e-4930-96cb-5736a55e4a5e&threadId=19:meeting_NDQ0ZTdkNTQtODdhNS00Y2JmLWJiY2YtNGEzOTA0MjNlMDkz@thread.v2&organizerId=0eaa6d43-d47c-4a07-93d0-38dc406dc1af&biz=0&bid=SPS@politienl.onmicrosoft.com&ssid=qOTsXqba20ybKB2AwDbr6w2&joinWebUrl=https%3a%2f%2fteams.microsoft.com%2fl%2fmeetup-join%2f19%3ameeting_NDQ0ZTdkNTQtODdhNS00Y2JmLWJiY2YtNGEzOTA0MjNlMDkz%40thread.v2%2f0%3fcontext%3d%7b%22Tid%22%3a%22939e76d1-059e-4930-96cb-5736a55e4a5e%22%2c%22Oid%22%3a%220eaa6d43-d47c-4a07-93d0-38dc406dc1af%22%7d&ts=1717072363935"> */}
-          <a href="https://teams.microsoft.com/v2/?meetingjoin=true#/l/meetup-join/19:meeting_ZjQyZTVhNzItMzI4MC00ZDdhLWFkMTItNjE2ZjE4MThiMzc3@thread.v2/0?context=%7b%22Tid%22%3a%2241008dae-d4d5-4ab8-b3d4-fd02e468d9db%22%2c%22Oid%22%3a%22a3964e64-37ff-4dc4-94bc-bab1a6980c06%22%7d&anon=true&deeplinkId=bd046791-92c8-4bb7-ad42-5644d7cb4841">
+          {/* <a href="https://teams.microsoft.com/v2/?meetingjoin=true#/l/meetup-join/19:meeting_ZjQyZTVhNzItMzI4MC00ZDdhLWFkMTItNjE2ZjE4MThiMzc3@thread.v2/0?context=%7b%22Tid%22%3a%2241008dae-d4d5-4ab8-b3d4-fd02e468d9db%22%2c%22Oid%22%3a%22a3964e64-37ff-4dc4-94bc-bab1a6980c06%22%7d&anon=true&deeplinkId=bd046791-92c8-4bb7-ad42-5644d7cb4841">
             <div className="button">
               <VideoCamera />
               <span>Ik wil direct contact met de politie</span>
             </div>
-          </a>
+          </a> */}
           {/* {callAdapter ? (
             <div>
               <h1>Contact Customer Service</h1>
