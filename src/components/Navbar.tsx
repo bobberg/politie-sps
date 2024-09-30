@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 // import "../App.css";
 import PolitieLogo from "../assets/PolitieLogo";
+import PolitieLogoBig from "../assets/PolitieLogoBig";
 
 // Import your icons here
 // import Info from "../assets/Info";
