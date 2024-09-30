@@ -61,15 +61,14 @@ const PallyPage: React.FC = () => {
 
     (window as any).uneeqInteractionsOptions = uneeqOptions;
 
-    // Check if script is already added
-    if (
-      !document.querySelector(
-        'script[src="https://hosted.de.uneeq.io/interactions/v1/deploy"]'
-      )
-    ) {
+    const scriptId = "uneeq-script";
+    const existingScript = document.getElementById(scriptId);
+
+    if (!existingScript) {
       const script = document.createElement("script");
       script.src = "https://hosted.de.uneeq.io/interactions/v1/deploy";
       script.async = true;
+      script.id = scriptId;
       document.body.appendChild(script);
 
       return () => {

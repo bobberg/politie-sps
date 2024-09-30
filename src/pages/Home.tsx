@@ -40,7 +40,7 @@ const Home = () => {
                 <span>Ik wil de status van mijn zaak weten</span>
               </div>
             </Link>
-            {/* <Link to="/digital-human">
+            <Link to="/digital-human">
               <div className="button">
                 <img
                   src="./round-pally.png"
@@ -49,7 +49,7 @@ const Home = () => {
                 />
                 <span>Praat met Pally</span>
               </div>
-            </Link> */}
+            </Link>
           </div>
         </main>
         <footer className="footer">
