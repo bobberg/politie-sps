@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // import "../App.css";
-import PolitieLogo from "../assets/PolitieLogo";
+
 import PolitieLogoBig from "../assets/PolitieLogoBig";
 
 // Import your icons here
@@ -21,7 +21,7 @@ const Navbar = () => {
       <nav className="navbar" style={{ backgroundColor: "#182866" }}>
         <div className="navbar-brand">
           <Link to="/">
-            <PolitieLogo />
+            <PolitieLogoBig />
           </Link>
         </div>
         <div>
