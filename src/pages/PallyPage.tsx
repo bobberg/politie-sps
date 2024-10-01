@@ -62,22 +62,27 @@ const PallyPage: React.FC = () => {
       (window as any).uneeqInteractionsOptions = uneeqOptions;
 
       const scriptId = "uneeq-script";
-      if ((window as any).Uneeq || document.getElementById(scriptId)) {
-        return;
+      if (!document.getElementById(scriptId)) {
+        const script = document.createElement("script");
+        script.src = "https://hosted.de.uneeq.io/interactions/v1/deploy";
+        script.async = true;
+        script.id = scriptId;
+        document.body.appendChild(script);
+
+        script.onload = () => {
+          if (typeof (window as any).Uneeq !== "undefined") {
+            console.log("Uneeq loaded successfully.");
+            // Initialize or interact with Uneeq here
+          }
+        };
+
+        return () => {
+          const existingScript = document.getElementById(scriptId);
+          if (existingScript) {
+            document.body.removeChild(existingScript);
+          }
+        };
       }
-
-      const script = document.createElement("script");
-      script.src = "https://hosted.de.uneeq.io/interactions/v1/deploy";
-      script.async = true;
-      script.id = scriptId;
-      document.body.appendChild(script);
-
-      return () => {
-        const existingScript = document.getElementById(scriptId);
-        if (existingScript) {
-          document.body.removeChild(existingScript);
-        }
-      };
     };
 
     setupUneeq();
