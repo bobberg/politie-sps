@@ -8,7 +8,9 @@ import Zien from "../assets/Zien";
 import { EmergencyPhone } from "../assets/EmergencyPhone";
 
 const Home = () => {
-  const baseUrl = process.env.REACT_APP_PUBLIC_URL || "";
+  const baseUrl =
+    process.env.REACT_APP_PUBLIC_URL ||
+    "https://zealous-wave-0e83e9a03.5.azurestaticapps.net/";
 
   return (
     <>
