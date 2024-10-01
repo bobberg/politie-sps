@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const DigitalHumanPage: React.FC = () => {
+const DigitalHumanPage = () => {
   useEffect(() => {
     const setupUneeq = () => {
       const uneeqOptions = {

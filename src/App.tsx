@@ -11,7 +11,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/digital-human" element={<DigitalHumanPage />} />
-        {/* I am getting 404 for /digital-human. How to fix */}
 
         {/* Add other routes if needed */}
       </Routes>
