@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const PallyPage: React.FC = () => {
+const DigitalHumanPage: React.FC = () => {
   useEffect(() => {
     const setupUneeq = () => {
       const uneeqOptions = {
@@ -99,4 +99,4 @@ const PallyPage: React.FC = () => {
   );
 };
 
-export default PallyPage;
+export default DigitalHumanPage;
