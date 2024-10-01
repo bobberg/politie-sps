@@ -8,6 +8,8 @@ import Zien from "../assets/Zien";
 import { EmergencyPhone } from "../assets/EmergencyPhone";
 
 const Home = () => {
+  const baseUrl = process.env.REACT_APP_PUBLIC_URL || "";
+
   return (
     <>
       <div className="App">
@@ -40,7 +42,7 @@ const Home = () => {
                 <span>Ik wil de status van mijn zaak weten</span>
               </div>
             </Link>
-            <Link to="/digital-human">
+            <Link to={`${baseUrl}/digital-human`}>
               <div className="button">
                 <img
                   src="./round-pally.png"
