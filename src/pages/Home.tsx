@@ -8,9 +8,9 @@ import Zien from "../assets/Zien";
 import { EmergencyPhone } from "../assets/EmergencyPhone";
 
 const Home = () => {
-  const baseUrl =
-    process.env.REACT_APP_PUBLIC_URL ||
-    "https://zealous-wave-0e83e9a03.5.azurestaticapps.net/";
+  // const baseUrl =
+  //   process.env.REACT_APP_PUBLIC_URL ||
+  //   "https://zealous-wave-0e83e9a03.5.azurestaticapps.net/";
 
   return (
     <>
@@ -44,7 +44,7 @@ const Home = () => {
                 <span>Ik wil de status van mijn zaak weten</span>
               </div>
             </Link>
-            <Link to={`${baseUrl}/digital-human`}>
+            <Link to={`/digital-human`}>
               <div className="button">
                 <img
                   src="./round-pally.png"
