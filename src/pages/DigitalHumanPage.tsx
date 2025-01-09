@@ -14,6 +14,7 @@ const DigitalHumanPage = () => {
           camera_position_distance: 0.8,
         },
         customStyles: "",
+
         enableTransparentBackground: false,
         playWelcome: true,
         ctaThumbnailUrl:
@@ -29,6 +30,7 @@ const DigitalHumanPage = () => {
         autoStart: false,
         containedAutoLayout: true,
         initLoadHandler: true,
+
         languageStrings: {
           default: {
             callToActionText: "👋 Hey! It is so good to meet you.",

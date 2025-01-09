@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 import Info from "../assets/Info";
-import Notebook from "../assets/Notebook";
-import Zien from "../assets/Zien";
+
+import ChatBubble from "../assets/ChatBubble";
+
 import { EmergencyPhone } from "../assets/EmergencyPhone";
+import PoliceAgentIcon from "../assets/PoliceAgentIcon";
 
 const Home = () => {
   // const baseUrl =
@@ -23,27 +25,31 @@ const Home = () => {
             <Link to="https://www.politie.nl/onderwerpen">
               <div className="button">
                 <Info />
-                <span>Onderwerpen</span>
-              </div>
-            </Link>
-            <Link to="https://www.politie.nl/onderwerpen">
-              <div className="button">
-                <Info />
-                <span>Ik wil iets weten</span>
+                <span>Meer weten?</span>
+                <span style={{ fontWeight: "normal", paddingTop: "24px" }}>
+                  Bekijk alle onderwerpen van a-z
+                </span>
               </div>
             </Link>
             <Link to="https://www.politie.nl/aangifte-of-melding-doen/">
               <div className="button">
-                <Zien />
-                <span>Ik wil iets melden</span>
+                <ChatBubble />
+                <span>Aangifte of melding doen?</span>
+                <span style={{ fontWeight: "normal", paddingTop: "24px" }}>
+                  Bekijk alle aangifte- en meldformulieren
+                </span>
               </div>
             </Link>
-            <Link to="https://www.mijnslachtofferzaak.nl">
+            <Link to="https://www.politie.nl/">
               <div className="button">
-                <Notebook />
-                <span>Ik wil de status van mijn zaak weten</span>
+                <PoliceAgentIcon />
+                <span>Meer ontdekken op politie.nl?</span>
+                <span style={{ fontWeight: "normal", paddingTop: "24px" }}>
+                  Bekijk meer informatie en diensten op onze website
+                </span>
               </div>
             </Link>
+
             <Link to={`/digital-human`}>
               <div className="button">
                 <img
@@ -51,7 +57,10 @@ const Home = () => {
                   alt="Pally"
                   style={{ height: "80px" }}
                 />
-                <span>Praat met Pally</span>
+                <span>Heb je andere vragen?</span>
+                <span style={{ fontWeight: "normal", paddingTop: "24px" }}>
+                  Praat met Wendy, onze digitale politie agent
+                </span>
               </div>
             </Link>
           </div>
