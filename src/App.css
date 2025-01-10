@@ -21,9 +21,15 @@ a {
 
 .navbar {
   padding: 10px;
-  color: white;
+  /* color: white; */
   max-height: 80px;
-  background-color: #182866;
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.navbar-brand {
+  justify-self: center;
 }
 
 .navbar-logo {
@@ -193,7 +199,4 @@ h2 {
   font-weight: 700;
   font-size: 24px;
   text-transform: none;
-}
-.navbar-brand {
-  background-color: "white";
 }

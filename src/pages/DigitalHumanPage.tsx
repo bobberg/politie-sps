@@ -139,10 +139,12 @@ const DigitalHumanPage = () => {
       >
         <source src={videoSrc} type="video/mp4" />
       </video>
-      <div className="navbar-brand">
-        <a href="/">
-          <PolitieLogo />
-        </a>
+      <div className="navbar">
+        <div className="navbar-brand">
+          <a href="/">
+            <PolitieLogo />
+          </a>
+        </div>
       </div>
       <div className="centered-container">
         <h4 className="heading">Welkom, ik ben virtuele agent Wendy</h4>
