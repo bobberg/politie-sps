@@ -71,7 +71,7 @@ h2 {
   flex-direction: column;
 
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   height: 230px;
   max-height: 200px;
@@ -94,7 +94,7 @@ h2 {
 
 .button svg {
   margin-bottom: 8px;
-  width: 50px; /* Adjust icon size as needed */
+  width: 80px; /* Adjust icon size as needed */
   height: auto;
 }
 
