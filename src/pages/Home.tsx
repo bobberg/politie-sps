@@ -27,7 +27,7 @@ const Home = () => {
                 <Info />
                 <span>Meer weten?</span>
                 <span style={{ fontWeight: "normal", paddingTop: "24px" }}>
-                  Bekijk alle onderwerpen van a-z
+                  Bekijk ale onderwerpen van a-z
                 </span>
               </div>
             </Link>

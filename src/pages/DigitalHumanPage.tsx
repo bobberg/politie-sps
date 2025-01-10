@@ -1,4 +1,13 @@
 import React, { useEffect } from "react";
+import { Chevron } from "../assets/img/Chevron";
+import { NlFlag } from "../assets/img/NlFlag";
+import { GbFlag } from "../assets/img/GbFlag";
+import { DeFlag } from "../assets/img/DeFlag";
+import { PlFlag } from "../assets/img/PlFlag";
+import { TrFlag } from "../assets/img/TrFlag";
+import videoSrc from "../assets/video/wendy-right.mp4";
+import PolitieLogo from "../assets/PolitieLogo";
+import "../App.css";
 
 const DigitalHumanPage = () => {
   useEffect(() => {
@@ -14,7 +23,6 @@ const DigitalHumanPage = () => {
           camera_position_distance: 0.8,
         },
         customStyles: "",
-
         enableTransparentBackground: false,
         playWelcome: true,
         ctaThumbnailUrl:
@@ -30,7 +38,6 @@ const DigitalHumanPage = () => {
         autoStart: false,
         containedAutoLayout: true,
         initLoadHandler: true,
-
         languageStrings: {
           default: {
             callToActionText: "👋 Hey! It is so good to meet you.",
@@ -90,14 +97,63 @@ const DigitalHumanPage = () => {
     setupUneeq();
   }, []);
 
+  const LanguageButton = ({
+    FlagComponent,
+    text,
+  }: {
+    FlagComponent: React.ComponentType;
+    text: string;
+  }) => (
+    <button
+      className="language-button"
+      onMouseDown={(e) => (e.currentTarget.style.backgroundColor = "#19467E")}
+      onMouseUp={(e) => (e.currentTarget.style.backgroundColor = "#19467E")}
+      onFocus={(e) => (e.currentTarget.style.backgroundColor = "#19467E")}
+      onBlur={(e) => (e.currentTarget.style.backgroundColor = "#19467E")}
+      onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#19467E")}
+      onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#19467E")}
+      disabled={false}
+    >
+      <div className="language-button-content">
+        <div className="language-button-content">
+          <FlagComponent />
+          <span className="language-text">{text}</span>
+        </div>
+        {/* chevron should go to the right */}
+        <div className="language-button-chevron">
+          <Chevron />
+        </div>
+      </div>
+    </button>
+  );
+
   return (
-    <div
-      style={{
-        background: `url(https://res.cloudinary.com/ddownn0ib/image/upload/v1723010146/Pre_Sales_Demo/demobackground_yuria_jmvf3x.png) no-repeat center center fixed`,
-        backgroundSize: "cover",
-        height: "100vh",
-      }}
-    ></div>
+    <div>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="video-background"
+        key={videoSrc}
+      >
+        <source src={videoSrc} type="video/mp4" />
+      </video>
+      <div className="navbar-brand">
+        <a href="/">
+          <PolitieLogo />
+        </a>
+      </div>
+      <div className="centered-container">
+        <h4 className="heading">Welkom, ik ben virtuele agent Wendy</h4>
+        <p className="subheading">In welke taal kan ik u helpen?</p>
+        <LanguageButton FlagComponent={NlFlag} text="Start Nederlands" />
+        <LanguageButton FlagComponent={GbFlag} text="Start English" />
+        <LanguageButton FlagComponent={DeFlag} text="Start Deutsch" />
+        <LanguageButton FlagComponent={PlFlag} text="Uruchom Polski" />
+        <LanguageButton FlagComponent={TrFlag} text="Başlat Türkçe" />
+      </div>
+    </div>
   );
 };
 
