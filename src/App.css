@@ -25,7 +25,7 @@ a {
   max-height: 80px;
   background: white;
   width: 100%;
-  position: relative;
+  position: fixed;
   top: 0;
 }
 .navbar-brand {
@@ -141,9 +141,9 @@ h2 {
 
 .centered-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
+  top: 10%;
+  left: 2%;
+  /* transform: translate(-100%, -50%); */
   background: #fff;
   padding: 50px 50px;
   display: flex;
@@ -155,7 +155,7 @@ h2 {
 }
 
 .heading {
-  color: #19467e;
+  color: #182866;
   font-size: 36px;
   font-weight: 700;
   font-family: "PolitieSans";
@@ -164,7 +164,7 @@ h2 {
 }
 
 .subheading {
-  color: #19467e;
+  color: #182866;
   font-size: 30px;
   font-weight: 400;
   padding: 0 0 10px 0;
@@ -174,7 +174,7 @@ h2 {
   border-radius: 8px;
   height: 120px;
   width: 410px;
-  background-color: #19467e;
+  background-color: #182866;
   box-shadow: -2px 2px 0px 0px yellow;
   color: white;
   margin-left: 8px;
@@ -186,6 +186,13 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.language-button:hover {
+  background-color: #182866;
+}
+.language-button:focus {
+  outline: none;
 }
 
 .language-button-content {

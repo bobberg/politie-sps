@@ -4,7 +4,7 @@ import { NlFlag } from "../assets/img/NlFlag";
 import { GbFlag } from "../assets/img/GbFlag";
 import { DeFlag } from "../assets/img/DeFlag";
 import { PlFlag } from "../assets/img/PlFlag";
-import { TrFlag } from "../assets/img/TrFlag";
+// import { TrFlag } from "../assets/img/TrFlag";
 import videoSrc from "../assets/video/wendy-right.mp4";
 import PolitieLogo from "../assets/PolitieLogo";
 import "../App.css";
@@ -153,7 +153,7 @@ const DigitalHumanPage = () => {
         <LanguageButton FlagComponent={GbFlag} text="Start English" />
         <LanguageButton FlagComponent={DeFlag} text="Start Deutsch" />
         <LanguageButton FlagComponent={PlFlag} text="Uruchom Polski" />
-        <LanguageButton FlagComponent={TrFlag} text="Başlat Türkçe" />
+        {/* <LanguageButton FlagComponent={TrFlag} text="Başlat Türkçe" /> */}
       </div>
     </div>
   );
