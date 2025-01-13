@@ -6,8 +6,11 @@ import { DeFlag } from "../assets/img/DeFlag";
 import { PlFlag } from "../assets/img/PlFlag";
 // import { TrFlag } from "../assets/img/TrFlag";
 import videoSrc from "../assets/video/wendy-right.mp4";
-import PolitieLogo from "../assets/PolitieLogo";
+// import PolitieLogo from "../assets/PolitieLogo";
+// import PolitieLogoNieuw from "../assets/PolitieLogoNieuw";
+import Navbar from "../components/Navbar";
 import "../App.css";
+// import Navbar from "../components/Navbar";
 
 const DigitalHumanPage = () => {
   useEffect(() => {
@@ -139,13 +142,14 @@ const DigitalHumanPage = () => {
       >
         <source src={videoSrc} type="video/mp4" />
       </video>
-      <div className="navbar">
+      {/* <div className="navbar">
         <div className="navbar-brand">
           <a href="/">
-            <PolitieLogo />
+            <PolitieLogoNieuw />
           </a>
         </div>
-      </div>
+      </div> */}
+      <Navbar />
       <div className="centered-container">
         <h4 className="heading">Welkom, ik ben virtuele agent Wendy</h4>
         <p className="subheading">In welke taal kan ik u helpen?</p>

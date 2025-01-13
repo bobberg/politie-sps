@@ -38,7 +38,7 @@ a {
 
 .main-body {
   text-align: left;
-  padding: 20px;
+  padding: 60px 20px 20px 20px;
   background-color: #eaf0f7;
   flex-grow: 1;
 }
