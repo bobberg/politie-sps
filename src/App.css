@@ -27,11 +27,15 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically, if needed */
 }
 .navbar-brand {
   justify-self: center;
   margin-left: auto;
   margin-right: auto;
+  display: block; /* Or use flex if necessary */
 }
 
 .navbar-logo {
