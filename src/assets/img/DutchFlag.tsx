@@ -1,4 +1,4 @@
-export const NlFlag = () => {
+export const DutchFlag = () => {
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
@@ -9,3 +9,4 @@ export const NlFlag = () => {
     </>
   );
 };
+export default DutchFlag;

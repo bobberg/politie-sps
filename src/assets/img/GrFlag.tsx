@@ -1,4 +1,4 @@
-export const GrFlag = () => {
+const GrFlag = () => {
   return (
     <div className="flag-container">
       <svg
@@ -24,3 +24,5 @@ export const GrFlag = () => {
     </div>
   );
 };
+
+export default GrFlag;

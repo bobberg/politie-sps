@@ -1,4 +1,4 @@
-export const PlFlag = () => {
+const PlFlag = () => {
   return (
     <div className="flag-container">
       <svg
@@ -15,3 +15,4 @@ export const PlFlag = () => {
     </div>
   );
 };
+export default PlFlag; // Change to default export

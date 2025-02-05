@@ -1,4 +1,4 @@
-export const DeFlag = () => {
+const DeFlag = () => {
   return (
     <div className="flag-container">
       <svg
@@ -14,3 +14,4 @@ export const DeFlag = () => {
     </div>
   );
 };
+export default DeFlag;

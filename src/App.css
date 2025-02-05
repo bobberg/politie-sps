@@ -19,29 +19,6 @@ a {
   height: 100%;
 }
 
-.navbar {
-  padding: 10px;
-  /* color: white; */
-  max-height: 80px;
-  background: white;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: center; /* Centers items horizontally */
-  align-items: center; /* Centers items vertically, if needed */
-}
-.navbar-brand {
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block; /* Or use flex if necessary */
-}
-
-.navbar-logo {
-  height: 48px; /* Adjust as needed */
-}
-
 .main-body {
   text-align: left;
   padding: 60px 20px 20px 20px;
@@ -66,10 +43,10 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
   width: calc(100% - 10px - 1px);
   margin: 0 auto;
   max-width: 900px;
+  gap: 40px;
 }
 
 .button {
@@ -84,8 +61,6 @@ h2 {
   width: 200px;
   max-width: 300px;
   padding: 50px;
-  /* border: 1px solid #ccc; */
-  /* border-radius: 8px; */
   background-color: white;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -150,14 +125,20 @@ h2 {
   top: 10%;
   left: 2%;
   /* transform: translate(-100%, -50%); */
-  background: #fff;
-  padding: 50px 50px;
-  display: flex;
-  justify-content: center;
+  background: #eaf0f7;
+  padding: 40px;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
+  /* flex-direction: column; */
   border-radius: 1.25rem;
+}
+.language-buttons-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap into next row */
+  justify-content: center; /* Center the contents horizontally */
+  align-items: center; /* Center the contents vertically */
+  max-width: 942px; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: ;
 }
 
 .heading {
@@ -165,40 +146,62 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   font-family: "PolitieSans";
-  padding: 0 0 10px 0;
-  margin: 0;
+  padding: 0 0 4px 0;
+  margin: 0 0 0 0;
 }
 
 .subheading {
   color: #182866;
   font-size: 30px;
   font-weight: 400;
-  padding: 0 0 10px 0;
+  padding: 4px 0 0 0;
+  margin: 0 0 40px 0;
 }
 
 .language-button {
-  border-radius: 8px;
   height: 120px;
-  width: 410px;
-  background-color: #182866;
-  box-shadow: -2px 2px 0px 0px yellow;
+  max-width: 298px;
+  background-color: white;
   color: white;
-  margin-left: 8px;
   font-weight: 700;
   font-size: 24px;
   text-transform: none;
   padding: 10px 24px;
-  margin: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: none;
+  flex: 0 1 calc(33.33% - 10px); /* Each button takes up 1/3 of the container's width, minus some spacing */
+  margin: 12px; /* Add spacing between buttons */
+  /* padding: 0 12px 0 0; */
+  display: flex; /* Use flex to align the flag and text */
+  align-items: center; /* Center items vertically */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+/* Remove left margin from the first column */
+.language-button:nth-child(3n + 1) {
+  margin-left: 0; /* No left margin for the first column */
 }
 
-.language-button:hover {
-  background-color: #182866;
+/* Remove right margin from the last column */
+.language-button:nth-child(3n) {
+  margin-right: 0; /* No right margin for the last column */
 }
-.language-button:focus {
-  outline: none;
+
+/* Optional: If you want to remove vertical spacing for the first and last items in the rows */
+.language-button:nth-child(-n + 3) {
+  margin-top: 0; /* No top margin for items in the first row */
+}
+
+.language-button:nth-last-child(-n + 3) {
+  margin-bottom: 0; /* No bottom margin for items in the last row */
+}
+
+.language-button:focus,
+.language-button:hover {
+  /* background-color: #19467e; */
 }
 
 .language-button-content {
@@ -213,7 +216,19 @@ h2 {
   font-weight: 700;
   font-size: 24px;
   text-transform: none;
+  color: #182866;
 }
+
 .bubble .user .ng-star-inserted {
   font-size: 52px;
+}
+
+.flag-container {
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.25));
+}
+
+.digital-human-overlay {
+  border-radius: 20px;
+  opacity: 0.5;
+  background: #fff;
 }

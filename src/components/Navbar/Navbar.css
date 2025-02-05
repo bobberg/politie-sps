@@ -1,0 +1,26 @@
+.navbar {
+  padding: 10px;
+  max-height: 80px;
+  background: #182866; /* Match the background color */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+.navbar-brand {
+  display: flex; /* Optional, in case you need to align items inside */
+  justify-content: center; /* Center the brand */
+  flex-grow: 1; /* Allows this to take remaining space */
+  margin-left: -213px;
+}
+
+.navbar-logo {
+  height: 48px; /* Adjust as needed */
+}
+.navbar-emergency-container {
+  display: flex;
+  align-items: center; /* Centers the items vertically */
+  margin-right: auto; /* Pushes the logo to center */
+  margin-left: 60px; /* Adds 60 pixels left margin */
+}
