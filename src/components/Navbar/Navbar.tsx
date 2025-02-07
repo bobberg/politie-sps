@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { EmergencyPhone } from "../../assets/EmergencyPhone";
 import PolitieLogoBig from "../../assets/PolitieLogoBig";
+import PhoneHangUp from "../../assets/PhoneHangUp";
 import "./Navbar.css"; // Ensure to create a CSS file for styles if needed
 
 const Navbar = () => {
@@ -18,6 +19,15 @@ const Navbar = () => {
           <Link to="/">
             <PolitieLogoBig />
           </Link>
+        </div>
+        {/* end conversation button on the right side */}
+        <div className="navbar-end">
+          <button className="navbar-end-button">
+            <div className="navbar-end-button-icon">
+              <PhoneHangUp />
+            </div>
+            Gesprek beëindigen
+          </button>
         </div>
       </nav>
     </>

@@ -167,8 +167,8 @@ const DigitalHumanPage = () => {
       </video>
       <Navbar />
       {loading && <LoadingOverlay />}
-      {/* <ConversationInterface /> */}
-      <div className="centered-container">
+      <ConversationInterface />
+      {/* <div className="centered-container">
         <h4 className="heading">Welkom, ik ben virtuele agent Wendy</h4>
         <p className="subheading">In welke taal kan ik je helpen?</p>
 
@@ -184,7 +184,7 @@ const DigitalHumanPage = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
