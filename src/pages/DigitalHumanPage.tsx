@@ -17,6 +17,7 @@ import {
   DkFlag,
   SeFlag,
 } from "../assets/img";
+import ConversationInterface from "../components/ConversationInterface/ConversationInterface";
 import LoadingOverlay from "../components/LoadingOverlay/LoadingOverlay";
 import LanguageButton from "../components/LanguageButton/LanguageButton";
 
@@ -166,9 +167,11 @@ const DigitalHumanPage = () => {
       </video>
       <Navbar />
       {loading && <LoadingOverlay />}
+      {/* <ConversationInterface /> */}
       <div className="centered-container">
         <h4 className="heading">Welkom, ik ben virtuele agent Wendy</h4>
-        <p className="subheading">In welke taal kan ik u helpen?</p>
+        <p className="subheading">In welke taal kan ik je helpen?</p>
+
         <div className="language-buttons-container">
           {languages.map(({ FlagComponent, text, locale }) => (
             <LanguageButton
