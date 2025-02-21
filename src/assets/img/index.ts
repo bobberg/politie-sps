@@ -13,4 +13,6 @@ export { default as JpFlag } from "./JpFlag";
 export { default as InFlag } from "./InFlag";
 export { default as DkFlag } from "./DkFlag";
 export { default as SeFlag } from "./SeFlag";
-// export { default as PhoneHangUp } from "./PhoneHangUp";
+export { default as ChevronDown } from "./ChevronDown";
+export { default as ChevronUp } from "./ChevronUp";
+export { default as QuestionExplainerCircle } from "./QuestionExplainerCircle";

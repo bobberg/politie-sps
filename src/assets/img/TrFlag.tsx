@@ -1,4 +1,4 @@
-const TrFlag = () => {
+export const TrFlag = () => {
   return (
     <div className="flag-container">
       <svg

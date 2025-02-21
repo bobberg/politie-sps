@@ -1,4 +1,4 @@
-const DeFlag = () => {
+export const DeFlag = () => {
   return (
     <div className="flag-container">
       <svg

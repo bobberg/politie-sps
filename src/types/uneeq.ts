@@ -15,10 +15,11 @@ declare global {
 }
 
 export interface UneeqInteractionsOptions {
+  connectionUrl: string;
   /**
    * The unique personas share Id. This value can be found in the Creator portal, or provided to you by your customer success representative.
    */
-  personaShareId: string;
+  personaId: string;
   /**
    * Should the call to action (DH preview with message) be displayed at the bottom of the page.
    */
@@ -44,11 +45,8 @@ export interface UneeqInteractionsOptions {
   /**
    * Where the digital human should be positioned.
    */
-  cameraPosition?: {
-    camera_position_vertical: number;
-    camera_position_horizontal: number;
-    camera_position_distance: number;
-  };
+  cameraAnchorPosition: string;
+
   /**
    * String of CSS to be applied to the digital human frame. Allows client to inject their own CSS styling rules and overrides. Making large changes via customStyles is discouraged as the Hosted Experience interface is subject to change. For example, the class name you might rely on for as a css selector could change without warning.
    *
@@ -106,6 +104,16 @@ export interface UneeqInteractionsOptions {
   voiceInputMode?: "SPEECH_RECOGNITION" | "PUSH_TO_TALK";
   backgroundImageUrl?: string;
   showClosedCaptions?: boolean;
+  logLevel: string;
+  enableVad?: boolean;
+  enableInterruptBySpeech?: boolean;
+  autoStart?: boolean;
+  containedAutoLayout?: boolean;
+  captionsPosition?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+  ctaThumbnailUrl?: string;
+  customMetadata: { [key: string]: unknown };
+  speechRecognitionHintPhrasesBoost?: number;
+  welcomePrompt?: string;
 }
 
 export enum UneeqSessionState {

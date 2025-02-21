@@ -1,27 +1,162 @@
 .conversation-interface {
   display: flex;
   flex-direction: column;
-  height: 90vh;
 
+  /* height: 90vh; */
+  /* make height relative to the height of the app */
+  height: calc(100vh - 160px);
   margin: 40px 20px 40px 40px;
-  position: relative;
+  position: absolute;
   top: 80px;
   border-radius: 20px;
-
   background: rgba(255, 255, 255, 0.5);
   width: 658px;
+}
+.conversation-interface-explainer-questionmark {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.conversation-interface-explainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 24px 0;
+  background-color: white;
+  padding: 24px;
+  max-width: 352px;
+  margin: 0 auto;
+  border-radius: 12px;
+  color: #1b1b1b;
+  position: fixed;
+  /* center in middle of screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.conversation-interface-explainer h2 {
+  margin: 20px 0 8px 0;
+}
+.conversation-interface-explainer p {
+  margin: 0 0 0 0;
+}
+
+.conversation-interface-explainer-microphone-circle {
+  width: 48px;
+  height: 48px;
+  background-color: #add5f0;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-right: auto;
+}
+.conversation-interface-explainer-microphone-circle svg {
+  width: 24px;
+  height: 24px;
+}
+.conversation-interface-explainer-button {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #182866;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  margin-top: 32px;
+  cursor: pointer;
+  width: 100%;
+  color: #182866;
+}
+.conversation-interface-explainer-background {
+  background-color: #344054;
+  opacity: 0.6;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .conversation-interface-heading {
   margin: 24px;
 }
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  /* make height depending on screen and other componenets */
+  height: calc(100% - 420px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
 .chat-message {
   padding: 8px 14px;
   align-items: flex-start;
   gap: 8px;
   border-radius: 14px;
+  margin: 16px 24px 0 24px;
+  min-width: 18px;
+}
+
+.bot-chat-message {
   background: rgba(255, 255, 255, 1);
-  width: 311px;
-  margin: 24px 0 0 24px;
+  width: max-content;
+  max-width: 311px;
+}
+.bot-typing-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.bot-typing-indicator-dot {
+  background: #182866;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 2px -12px 2px;
+  animation: bot-typing-indicator-dot 1s infinite ease-in-out;
+}
+
+.bot-typing-indicator-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bot-typing-indicator-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bot-typing-indicator-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bot-typing-indicator-dot {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.user-chat-message {
+  background: #add5f0;
+  width: auto;
+  max-width: 311px;
+  align-self: flex-end;
+}
+.conversation-interface-input-container {
+  /* bottom position */
+  position: absolute;
+  bottom: 0;
 }
 .conversation-interface-input-container {
   /* bottom position */
@@ -58,10 +193,10 @@
   justify-content: center;
   align-items: center;
   margin: 22px auto 24px auto;
+  user-select: none;
 }
-
 .conversation-interface-microphone-pulsating-circle {
-  animation: pulse 0.5s infinite;
+  animation: pulse 0.6s infinite;
   height: 76px;
   width: 76px;
   border-radius: 50%;
@@ -77,17 +212,28 @@
   align-items: center;
   margin: 22px auto 24px auto;
   position: absolute;
+  cursor: pointer;
 }
+
 @keyframes pulse {
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(1.37);
+    /* opacity: 0; */
     background-color: rgba(24, 40, 102, 0);
   }
 }
-
+.conversation-interface-microphone-text-instruction {
+  user-select: none;
+}
+.conversation-interface-microphone-text-listening {
+  user-select: none;
+}
+/* .conversation-interface-microphone-pulsating-circle div svg {
+  transform: scale(1);
+} */
 .conversation-interface-input-quick-replies {
   display: flex;
   height: 48px;
@@ -130,6 +276,8 @@
   align-items: center;
   gap: 6px;
   align-self: stretch;
+  /* make sure it doesn't overflow and doesn't go over the chat-input-send button without changing the width */
+  overflow: hidden;
 }
 .chat-input-send {
   display: flex;
@@ -138,16 +286,20 @@
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  border: 1px solid var(--Grijs, #93999a);
-  background: var(--Grijs, #93999a);
+  border: 1px solid #93999a;
+  background: #182866;
   position: absolute;
-  border: none;
   cursor: pointer;
   right: 16px;
   padding: 10px;
 }
 
-#root {
+.chat-input-send-disabled {
+  background: #93999a;
+  cursor: not-allowed;
+}
+
+/* #root {
   position: fixed;
   top: 0;
-}
+} */

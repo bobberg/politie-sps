@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <nav className="navbar" style={{ backgroundColor: "#182866" }}>
         <div className="navbar-emergency-container">
-          <EmergencyPhone svgColor="white " />
+          <EmergencyPhone fill="white " />
           <span style={{ color: "white" }}>In noodgevallen, bel 112</span>
         </div>
         <div className="navbar-brand">
@@ -20,13 +20,19 @@ const Navbar = () => {
             <PolitieLogoBig />
           </Link>
         </div>
-        {/* end conversation button on the right side */}
+        {/* end conversation button on the right side - only render while active */}
         <div className="navbar-end">
-          <button className="navbar-end-button">
+          <button
+            onClick={
+              // refresh page
+              () => window.location.reload()
+            }
+            className="navbar-end-button"
+          >
             <div className="navbar-end-button-icon">
               <PhoneHangUp />
             </div>
-            Gesprek beëindigen
+            Refresh
           </button>
         </div>
       </nav>

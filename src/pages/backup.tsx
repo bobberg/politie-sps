@@ -116,8 +116,8 @@ const DigitalHumanPage = () => {
     const scriptId = "uneeq-script";
     if (!document.getElementById(scriptId)) {
       const script = document.createElement("script");
-      script.src = "https://hosted.de.uneeq.io/interactions/v1/deploy";
-      // script.src = "https://cdn-eu.uneeq.io/hosted-experience/deploy/index.js";
+      // script.src = "https://hosted.de.uneeq.io/interactions/v1/deploy";
+      script.src = "https://cdn-eu.uneeq.io/hosted-experience/deploy/index.js";
       script.async = true;
       script.id = scriptId;
       document.body.appendChild(script);

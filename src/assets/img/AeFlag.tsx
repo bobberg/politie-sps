@@ -1,4 +1,6 @@
-const AeFlag = () => (
+import * as React from "react";
+
+export const AeFlag = () => (
   <div className="flag-container">
     <svg
       xmlns="http://www.w3.org/2000/svg"

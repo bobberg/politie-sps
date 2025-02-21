@@ -1,4 +1,4 @@
-const GbFlag = () => {
+export const GbFlag = () => {
   return (
     <div className="flag-container">
       <svg

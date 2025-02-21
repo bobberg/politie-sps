@@ -11,8 +11,8 @@ const ArrowUp = () => {
         d="M10.0001 16.3327V4.66602M10.0001 4.66602L4.16675 10.4993M10.0001 4.66602L15.8334 10.4993"
         stroke="white"
         strokeWidth="1.66667"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </svg>
   );

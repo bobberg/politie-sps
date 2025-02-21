@@ -93,8 +93,8 @@ h2 {
 }
 
 .footer-logo {
-  height: 50px; /* Adjust as needed */
-  margin-right: 10px;
+  margin: 0 28px 0 0;
+  align-content: center;
 }
 
 /* Responsive layout for buttons */
@@ -131,6 +131,7 @@ h2 {
   /* flex-direction: column; */
   border-radius: 1.25rem;
 }
+
 .language-buttons-container {
   display: flex; /* Use flexbox for layout */
   flex-wrap: wrap; /* Allow items to wrap into next row */
@@ -138,8 +139,24 @@ h2 {
   align-items: center; /* Center the contents vertically */
   max-width: 942px; /* Limit the maximum width of the container */
   margin: 0 auto; /* Center the container */
+  width: 942px;
 }
-
+.language-buttons-show-more-button {
+  /* blue text color, no background, some padding align left */
+  color: #182866;
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: left;
+  margin-top: 30px;
+  gap: 8px;
+}
+.language-buttons-show-more-button span {
+}
 .heading {
   color: #182866;
   font-size: 36px;

@@ -1,4 +1,6 @@
-const EsFlag = () => (
+import * as React from "react";
+
+export const EsFlag = () => (
   <div className="flag-container">
     <svg
       xmlns="http://www.w3.org/2000/svg"

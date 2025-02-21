@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar";
 
 import Info from "../assets/Info";
 
@@ -8,6 +8,7 @@ import ChatBubble from "../assets/ChatBubble";
 
 import { EmergencyPhone } from "../assets/EmergencyPhone";
 import PoliceAgentIcon from "../assets/PoliceAgentIcon";
+import WoutAvatar from "../assets/img/WoutAvatar";
 
 const Home = () => {
   // const baseUrl =
@@ -50,7 +51,16 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link to={`/digital-human`}>
+            <Link to="https://www.politie.nl/contact">
+              <div className="button">
+                <WoutAvatar />
+                <span>Heb je andere vragen?</span>
+                <span style={{ fontWeight: "normal", paddingTop: "24px" }}>
+                  Praat met Wout, onze digitale politie agent
+                </span>
+              </div>
+            </Link>
+            {/* <Link to={`/digital-human`}>
               <div className="button">
                 <img
                   src="./round-pally.png"
@@ -62,11 +72,13 @@ const Home = () => {
                   Praat met Wendy, onze digitale politie agent
                 </span>
               </div>
-            </Link>
+            </Link> */}
           </div>
         </main>
         <footer className="footer">
-          <EmergencyPhone />
+          <div className="footer-logo">
+            <EmergencyPhone fill="#182866" />
+          </div>
           <span>In noodgevallen, bel 112</span>
         </footer>
       </div>

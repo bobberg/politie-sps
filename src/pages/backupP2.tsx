@@ -56,40 +56,44 @@ const DigitalHumanPage = () => {
 
   const setupUneeq = () => {
     const uneeqOptions = {
-      personaShareId: "1471e2fc-d5b9-4222-a0be-c288e91592a4",
+      // connectionUrl: "https://api-eu.uneeq.io",
+      // personaId: "1471e2fc-d5b9-4222-a0be-c288e91592a4",
+      personaShareId: "70b67c3f-9548-4336-aef6-b40762d8cf33",
+
       displayCallToAction: true,
-      position: "right",
       renderContent: true,
-      cameraPosition: {
-        camera_position_vertical: 0.0,
-        camera_position_horizontal: 0.0,
-        camera_position_distance: 0.8,
-      },
-      customStyles: "",
-      enableTransparentBackground: false,
-      playWelcome: true,
-      ctaThumbnailUrl:
-        "https://res.cloudinary.com/ddownn0ib/image/upload/v1723009979/DigitalHuman_Thumbnails%20for%20Hosted/yuriathumb_jcjj0a.png",
-      mobileViewWidthBreakpoint: 0,
-      backgroundImageUrl:
-        "https://res.cloudinary.com/duivsslmk/image/upload/fl_preserve_transparency/v1738766554/background_pm5dof.jpg",
+      mobileViewWidthBreakpoint: 900,
       layoutMode: "fullScreen",
-      enableMicrophone: true,
+      cameraAnchorPosition: "loose_close_up",
+      logLevel: "info",
+      enableMicrophone: false,
       showUserInputInterface: true,
-      voiceInputMode: "SPEECH_RECOGNITION",
-      enableVad: false,
-      autoStart: false, // Ensure autoStart is false to allow manual start
+      enableVad: true,
+      enableInterruptBySpeech: false,
+      autoStart: false,
       containedAutoLayout: true,
-      initLoadHandler: true,
+      showClosedCaptions: true,
+      captionsPosition: "bottom-left",
+      customMetadata: {},
+      speechRecognitionHintPhrasesBoost: 0,
       languageStrings: {
         default: {
           callToActionText: "👋 Hey! It is so good to meet you.",
           errorText: "An error occurred.",
           textInputPlaceholder: "Type here...",
+          showContentToolTip: "Show Content",
           sendQuestionButtonToolTip: "Send Message",
           startRecordingButtonToolTip: "Start Recording",
-          microphonePermissionBlockedButtonToolTip:
-            "Microphone permission blocked",
+          unmuteMicrophoneToolTip: "Unmute",
+          muteMicrophoneToolTip: "Mute",
+          microphonePermissionNotAllowedButtonToolTip:
+            "Microphone permission not allowed",
+          microphoneEnabledHintTitle: "Microphone Enabled",
+          microphoneEnabledHintText: "You can speak to me, I'm listening.",
+          microphoneEnabledHintTitleOverlay: "Mic Enabled",
+          microphoneNotAllowedMessage:
+            "Microphone permission was not allowed. Please allow access to your microphone " +
+            "via your browser settings, and try again.",
           recordingTapToStart: "Tap to record, tap again to send",
           recordingSpeakNowPrompt: "Speak now",
           recordingTapStopWhenDone: "Tap stop when done",
@@ -103,11 +107,9 @@ const DigitalHumanPage = () => {
           hideDigitalHumanButton: "Hide Digital Human",
         },
       },
-      speechToTextLocales: "en-US:nl-NL:de-DE:pl-PL",
+      welcomePrompt: "Hello! How can I help you today?",
       customData: {
         locale: "nl-NL",
-        personaOverrides:
-          '[{"header":"chainId","value":"899bafbb-2944-48e1-a2f0-67b0571f7910"},{"header":"agentId","value":""}]',
       },
     };
 
