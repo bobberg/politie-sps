@@ -53,7 +53,7 @@ export const uneeqConfig: UneeqInteractionsOptions = {
       hideDigitalHumanButton: "Hide Digital Human",
     },
   },
-  welcomePrompt: "Hello! How can I help you today?",
+  // welcomePrompt: "Hello! How can I help you today?",
 };
 
 export const uneeqWebSocketOptions: Options = {
