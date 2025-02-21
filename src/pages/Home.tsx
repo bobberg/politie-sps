@@ -56,7 +56,7 @@ const Home = () => {
                 <WoutAvatar />
                 <span>Heb je andere vragen?</span>
                 <span style={{ fontWeight: "normal", paddingTop: "24px" }}>
-                  Praat met Wout, onze digitale politie agent
+                  Chat met Wout, onze digitale politie agent
                 </span>
               </div>
             </Link>
