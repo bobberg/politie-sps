@@ -56,11 +56,13 @@ export const uneeqConfig: UneeqInteractionsOptions = {
   welcomePrompt: "Hello! How can I help you today?",
 };
 
-// export const uneeqWebSocketOptions: Options = {
-//   shouldReconnect: (closeEvent) => true,
-//   reconnectInterval: 3000,
-//   reconnectAttempts: 10,
-// };
+export const uneeqWebSocketOptions: Options = {
+  shouldReconnect: (closeEvent) => true,
+  reconnectInterval: 3000,
+  reconnectAttempts: 10,
+};
 
 export const uneeqScriptUrl =
   "https://cdn-eu.uneeq.io/hosted-experience/deploy/index.js";
+export const uneeqScriptId = "uneeq-script";
+export const uneeqScriptGlobalVariable = "Uneeq";
